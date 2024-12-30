@@ -26,25 +26,6 @@ const StudentDashboard = ({ userId }) => {
         try {
             const response = await axios.get(`http://localhost:8000/appointments/${userId}`);
             console.log("Appointments response:", response.data);
-            // const enrichedAppointments = await Promise.all(
-            //     response.data.map(async (appointment) => {
-            //         console.log("Processing appointment:", appointment); // Debug log
-            //         try {
-            //             const professorResponse = await axios.get(
-            //                 `http://localhost:8000/professors/${appointment.professorId}`
-            //             );
-            //             return {
-            //                 ...appointment,
-            //                 professorName: professorResponse.data.username,
-            //             };
-            //         } catch {
-            //             return {
-            //                 ...appointment,
-            //                 professorName: "Unknown Professor",
-            //             };
-            //         }
-            //     })
-            // );
             setAppointments(response.data);
         } catch (error) {
             console.error("Error fetching appointments:", error.response?.data || error.message);
