@@ -54,11 +54,5 @@ A simple web-based application for students to book appointments with professors
 ## Usage
 1. Start the backend server on `http://localhost:8000`.
 2. Start the frontend on `http://localhost:3000`.
-3. Professors can log in, set availability, and view slots.
-4. Students can log in, view professor slots, and book appointments.
-
-## Key Dependencies
-- **Backend**: Express.js, AWS SDK, uuid, body-parser, cors
-- **Frontend**: React.js, Axios, Bootstrap
 
 ---
