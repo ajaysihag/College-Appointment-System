@@ -282,7 +282,7 @@ app.get("/professors/:professorId", async (req, res) => {
  * Default route
  */
 app.get("/", (req, res) => {
-  res.send("Welcome to the College Appointment System Backend!");
+  res.send("College Appointment System Backend!");
 });
 
 // Start server
